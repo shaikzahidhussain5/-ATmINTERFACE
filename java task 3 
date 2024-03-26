@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class ATM {
+    private double balance;
+    private Scanner scanner;
+
+    public ATM(double initialBalance) {
+        balance = initialBalance;
+        scanner = new Scanner(System.in);
+    }
+
+    public void run() {
+        while (true) {
+            System.out.println("ATM Menu:");
+            System.out.println("1. Check Balance");
+            System.out.println("2. Deposit");
+            System.out.println("3. Withdraw");
+            System.out.println("4. Exit");
+            System.out.print("Enter your choice: ");
+            
+            
